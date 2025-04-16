@@ -174,7 +174,7 @@ window.customFilterSettings = {
                     logic: 'or',
                     getAttr: function(el, data) {
                         const tags = data.tags || [];
-                        const match = ['Axeishguy', 'Cornfedhippo', 'Guest Artist'];
+                        const match = ['Axeishguy', 'Cornfed_Hippo', 'Guest Artist'];
                         return tags.filter(tag => match.includes(tag));
                         }
                     },
@@ -183,16 +183,17 @@ window.customFilterSettings = {
                         hideName: false,
                         multiple: true,
                         logic: 'or',
-                        getAttr: 'tags'
+                        getAttr: 'tags',
+                        hidden: true
                    },
                              {
       name: 'Collection',
-      hideName: true,
+      hideName: false,
       multiple: true,
       getAttr: 'tags',
       getAttr: function(el, data) {
                         const tags = data.tags || [];
-                        const match = ['bloom-bone', 'fiesta'];
+                        const match = ['Bloom-Bone', 'Fiesta', 'Fancy-Free','Cornoddity-Merch'];
                         return tags.filter(tag => match.includes(tag));
                         }
 
